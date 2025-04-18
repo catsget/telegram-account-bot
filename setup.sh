@@ -16,7 +16,7 @@ fi
 if ! command -v uv &> /dev/null
 then
     echo "uv не установлен"
-    pip install uv
+    pkg install uv
 fi
 
 # Проверка зависимостей
