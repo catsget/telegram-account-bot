@@ -9,7 +9,7 @@ then
     echo "Python3 не установлен"
     pkg update
     pkg upgrade -y
-    pkg install python python-dev python-pillow clang make libjpeg-turbo-dev zlib-dev
+    pkg install -y python ndk-sysroot clang make \ libjpeg-turbo
 fi
 
 # проверка наличия uv
@@ -18,6 +18,8 @@ then
     echo "uv не установлен"
     pkg install uv
 fi
+
+pip install wheel
 
 # Проверка зависимостей
 uv sync
