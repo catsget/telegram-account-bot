@@ -17,6 +17,7 @@ if ! command -v uv &> /dev/null
 then
     echo "uv не установлен"
     pip install uv
+fi
 
 # Проверка зависимостей
 uv sync
