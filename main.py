@@ -2,10 +2,10 @@ import os
 import importlib
 import inspect
 from telethon import TelegramClient, events
-from config.config import api_id, api_hash
+from config.config import API_ID, API_HASH
 
 try:
-    client = TelegramClient('test', api_id, api_hash)
+    client = TelegramClient('test', API_ID, API_HASH)
     print('Бот запущен')
 
     async def load_commands():
