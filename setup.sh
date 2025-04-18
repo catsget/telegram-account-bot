@@ -9,7 +9,7 @@ then
     echo "Python3 не установлен"
     pkg update
     pkg upgrade -y
-    pkg install python python-pil
+    pkg install python python-dev python-pillow clang make libjpeg-turbo-dev zlib-dev
 fi
 
 # проверка наличия uv
