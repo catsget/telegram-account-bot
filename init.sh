@@ -4,8 +4,9 @@
 cd "$(dirname "$0")/config" || exit 1
 
 # Запрашиваем данные у пользователя
-read -p "Введите новый API ID: " api_id
-read -p "Введите новый API Hash: " api_hash
+echo 'Получите API ID и API Hash, создав app с любыми именами на сайте https://my.telegram.org > API development tools'
+read -p "Введите API ID: " api_id
+read -p "Введите API Hash: " api_hash
 
 # Генерируем новый config.py
 cat > config.py << EOF
