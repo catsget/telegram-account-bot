@@ -9,7 +9,7 @@ then
     echo "Python3 не установлен"
     pkg update
     pkg upgrade -y
-    pkg install python
+    pkg install python python-pil
 fi
 
 # проверка наличия uv
