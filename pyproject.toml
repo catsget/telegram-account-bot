@@ -1,0 +1,20 @@
+[project]
+name = "uv-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncio>=3.4.3",
+    "pillow>=11.2.1",
+    "qrcode>=8.1",
+    "telethon>=1.39.0",
+]
+
+[dependency-groups]
+dev = [
+    "uv-test",
+]
+
+[tool.uv.sources]
+uv-test = { workspace = true }
