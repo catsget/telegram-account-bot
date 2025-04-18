@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Переход в директорию скрипта (если нужно)
+# Переход в директорию скрипта
 cd "$(dirname "$0")"
 
 # Проверка наличия Python
@@ -12,13 +12,11 @@ then
     pkg install python
 fi
 
+# проверка наличия uv
 if ! command -v uv &> /dev/null
 then
-    echo "python uv не установлен"
+    echo "uv не установлен"
     pip install uv
 
 # Проверка зависимостей
 uv sync
-
-# Запуск бота
-uv run main.py
