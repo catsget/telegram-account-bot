@@ -11,7 +11,7 @@ then
     pkg upgrade -y
     pkg install -y python
 fi
-pkg install ndk-sysroot clang make \ libjpeg-turbo
+pkg install ndk-sysroot clang make libjpeg-turbo
 
 # проверка наличия uv
 if ! command -v uv &> /dev/null
