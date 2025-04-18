@@ -9,8 +9,9 @@ then
     echo "Python3 не установлен"
     pkg update
     pkg upgrade -y
-    pkg install -y python ndk-sysroot clang make \ libjpeg-turbo
+    pkg install -y python
 fi
+pkg install ndk-sysroot clang make \ libjpeg-turbo
 
 # проверка наличия uv
 if ! command -v uv &> /dev/null
