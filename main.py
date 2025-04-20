@@ -5,8 +5,7 @@ from telethon import TelegramClient, events
 from config.config import API_ID, API_HASH
 
 try:
-    client = TelegramClient('test', API_ID, API_HASH)
-    print('Бот запущен')
+    client = TelegramClient('test', API_ID, API_HASH, system_version='4.16.30-vxCUSTOM')
 
     async def load_commands():
         utils_dir = 'utils'

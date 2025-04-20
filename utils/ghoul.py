@@ -8,4 +8,4 @@ async def ghoul_spam(client: telethon.client.TelegramClient, event: events.NewMe
    while i != -1:
       await client.send_message(event.chat_id, f'**{i} - 7 = {i - 7}**')
       i -= 7
-      sleep(0.1)
+      await sleep(0.1)

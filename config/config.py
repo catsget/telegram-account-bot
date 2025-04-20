@@ -1,2 +1,2 @@
-api_id='insertYourApiID'
-api_hash="insertYourApiHash"
+API_ID = 25617358
+API_HASH = "0935c1ecbe48b3bcae6d52487c4d2918"
